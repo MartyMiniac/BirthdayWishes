@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/luchesa-vol-5/128/Cake-512.png">
+    <title>Console Master</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>message</td>
+        </tr>
+        {% for t in js %}
+        <tr>
+            <td>{{ t['_id'] }}</td>
+            <td>{{ t['name'] }}</td>
+            <td>{{ t['message'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <form action="/consolemaster" method="POST">
+        <input type="text" name="id">
+        <input type="submit" value="Delete">
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css') }}">
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/luchesa-vol-5/128/Cake-512.png">
+    <title>Priya's Birthday Wishes</title>
+</head>
+<body>
+    <h1>Wish Priya a Happy Birthday</h1>
+    <div class="sendwish">
+        <h2 class="info">What is it ?</h2>
+        <p class="info">
+            Our Friend Priya is having her Birthday on 6th June. She is quite upset about her plans getting ruined due to this Lockdown. Will you help me bring back her smile?
+        </p>
+        <p class="info">
+            Hi, My name is Rohan. I am a CS Student. I made this page so that I can bring togther all of Priya's Friend. It would be really great if you could write a short birthday message for her.
+        </p>
+        <p class="info">            
+            Shhh!! Once you are done please don't say this to Priya. Let this be a Surprise.
+        </p>
+        <p class="info">
+            Thanks for all your valuable time.
+        </p>
+        <p class="info">
+            Cheers!!
+        </p>
+        <h3 class="info fillform">Please Fill up the form and your wishes will appere below</h3>
+        <form action="/" method="POST">
+            <input name="name" id="name" type="text" placeholder="Enter your name" required>
+            <br>
+            <textarea name="message" id="message" rows="10" cols="30" placeholder="Enter your Message Here" required></textarea>
+            <br>
+            <input type="submit" value="Submit your Message">
+          </form>
+    </div>
+    <div class="numberofwishes">
+        <p>
+            In total {{no}} people have sent Priya their Birthday Wishes
+        </p>
+    </div>
+    <div class="wishes">
+        <ul class="flex-container wrap">
+            {% for t in msg %}
+                <li class="flex-item">
+                    <strong>{{t.name}}</strong> said, "{{t.message}}"
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

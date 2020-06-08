@@ -1,0 +1,97 @@
+body{
+    background-image: linear-gradient(45deg,pink,white,pink);
+}
+.flex-container{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+  .wrap{ 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+h1{
+    font-family: sans-serif;
+    background-image: linear-gradient(rgb(255, 157, 173),rgb(255, 106, 130));
+    color: white;
+    text-align: center;
+    max-width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+  }
+  .sendwish{
+    background-image: linear-gradient(rgb(255, 157, 173),rgb(255, 106, 130));
+    max-width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 10px;
+  }
+.sendwish form{
+    margin: 0 auto; 
+    width:250px;
+}
+.numberofwishes{
+    background-image: linear-gradient(rgb(255, 157, 173),rgb(255, 106, 130));
+    color: white;
+    max-width: 100%;
+    margin: 1em;
+    padding: 5px;
+    text-align: center;
+}
+  .flex-item {
+    font-family: sans-serif;
+    background: rgb(255, 106, 130);
+    padding: 5px;
+    width: 100%;
+    height: 400px;
+    margin: 10px;
+    
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  @media screen and (min-width: 900px)
+  {
+    .flex-item {
+        font-family: sans-serif;
+        background: rgb(255, 106, 130);
+        padding: 5px;
+        width: 250px;
+        height: 400px;
+        margin: 10px;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+      }
+  }
+  .wishes{
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .info
+  {
+    margin-left: 2em;
+    margin-right: 2em;
+    color: white;
+  }
+  .fillform{
+      color: lightgreen;
+  }
+  table, td, th {
+    border: 1px solid white;
+}
