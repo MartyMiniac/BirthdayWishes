@@ -1,4 +1,4 @@
-# BirtdayWishes
+# BirthdayWishes
 This is a birthday wish Page that can deployed on to Heroku.<br>
 This version was made for my Friend Priya Jha<br>
 You can Customise the page as per you needs.<br>
